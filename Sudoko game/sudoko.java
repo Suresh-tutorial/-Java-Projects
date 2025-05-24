@@ -20,7 +20,7 @@ public class sudoko {
         }
     }
     System.out.println("\nInput Sudoku:");
-    printBorad(board);
+    printBoard(board);
     if(solveSudoku(board)){
         System.out.println("\nSolution:");
         printBoard(board);
@@ -31,7 +31,7 @@ public class sudoko {
     scan.close();
     
    }
-   public static void printboard(int [][] board){
+   public static void printBoard(int [][] board){
     for(int i=0;i<SIZE;++i){
         if(i%3==0){
             System.out.println("----------------------");
@@ -82,7 +82,7 @@ public class sudoko {
     }
     //check column
     for(int i=0;i<SIZE;++i){
-        if(borad[i][col]==num){
+        if(board[i][col]==num){
             return false;
         }
     }
@@ -97,7 +97,7 @@ public class sudoko {
         }
 
     }
-    return true;
+    return
    }
 
 
